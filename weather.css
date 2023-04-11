@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Mukta', sans-serif;
+}
+::-webkit-scrollbar{
+    width: .3rem;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+.weather_app{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./weather_pexels.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 1000ms;
+    opacity: 1;
+}
+
+.weather_app .container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+    color: white;
+}
+
+.maintemp {
+    font-size: 5em;
+    color: white;
+    font-weight: 700;
+}
+.cityName {
+    font-size: 2em;
+    color: white;
+}
+
+.condition, .time, .date {
+    font-size: 1.3em;
+    color: white;
+}
+
+.search{
+    border-radius: 20px;
+    width: 40%;
+    padding: .5em;
+    outline: none;
+    border: none;
+  
+}
+.search::placeholder{
+    color: black;
+}
+.mybutton{
+    position: relative;
+    right: 30px;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all ease-in 200ms;
+    cursor: grab;
+
+}
+.mybutton:hover {
+    transform: scale(0.91);
+    color: grey;
+}
+
+.panel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+    min-height:50vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px grey, 0 0 11px grey;
+    border-radius: 20px;
+    transition: 1000ms;
+    position: relative;
+}
+
+.panel ul {
+    padding: 1.2em;
+    margin: 1em;
+    list-style-type: none;
+}
+.panel h4 {
+    font-size: 1.1em;
+    color: black;
+    font-weight: 700;
+}
+
+.panel ul li {
+    padding: .5em;
+    font-weight: 600;
+    color: black;
+    text-shadow: 1px 1px white;
+    letter-spacing: .11em;
+}
+
+span{
+    color: white;
+    text-shadow: none;
+}
+.panel ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Responsiveness */
+@media screen and (max-width:886px){
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:490px){
+    html{
+        font-size: 10px;
+    }
+}

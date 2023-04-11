@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <script src="https://kit.fontawesome.com/b1c5b9dbea.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body onload="getLocation()">
+ <div class="weather_app">
+    <div class="container">
+        <h4 class="title">Weather Forecast<i class="fa-solid fa-cloud"></i></h4>
+        <div class="cityInfo">
+            <span class="temp maintemp"></span>
+            <span ><img src="./clearskyIcon-removebg-preview.png" class="icon" alt="weather_icon" width="50" height="50"></span>
+            <span class="condition"></span>
+            <h4 class="cityName"></h4>
+            <small>
+                <span class="date"></span> 
+            </small>
+        </div>
+        <div class="locationInput">
+            <input type="text" class="search" placeholder="Search Your Location....">
+            <button class="mybutton" onclick="fetchWeatherData()"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div> <br>
+    <div class="panel" style="display: none;">
+        <ul>
+            <h4>Weather Details :</h4>
+            <li>Temperature :
+                 <span class="temp1"> </span></li>
+            <li>Humidity :
+                 <span class="humidity"></span></li>
+            <li>Pressure :
+                <span class="pressure"></span></li>
+            <li>Description :
+                <span class="description"></span></li>
+            <li>Country :
+                 <span class="country"></span></li>
+            <hr>
+            <li>Longitude :
+                <span class="long"></span></li>
+            <li>Latitude :
+                 <span class="lat"></span></li>
+        </ul>
+
+    </div>
+ </div>
+    <script src="weather.js"></script>
+    
+</body>
+</html>
