@@ -70,22 +70,22 @@ const fetchWeatherData=()=>{
             nameOutput.innerHTML = myData.name
             dateOutput.innerHTML = myday
             myPanel.style.display = "block";
-            if(conditionOutput.innerHTML == "Clouds" && myData.main.temp <= 5){
+            if( conditionOutput.innerHTML == "Clear" && myData.main.temp1 <= 5 +"&#176;"+"C" ){
                 myApp.style.transition = "1000"
-                myApp.style.backgroundImage = `url(./icedBg.jpg)`
-                myApp.style.minHeight = "110vh"
+                myApp.style.backgroundImage = `url(./icedBg.webp)`
+                myApp.style.minHeight = "100vh"
                 myApp.style.width = "auto"
                 icon.src = "./cloudlogo-removebg-preview.png"
             }else if(conditionOutput.innerHTML == 'Clouds'){
                 myApp.style.transition = "1000"
-                myApp.style.backgroundImage = `url(./CloudyBackground.jpg)`
-                myApp.style.minHeight = "110vh"
+                myApp.style.backgroundImage = `url(./CloudyBackground.webp)`
+                myApp.style.minHeight = "100vh"
                 myApp.style.width = "auto"
                 icon.src = "./cloudlogo-removebg-preview.png"
             }else if(conditionOutput.innerHTML == "Clear"){
                 myApp.style.transition = "1000"
-                myApp.style.backgroundImage = `url(./clearSky.jpg)`
-                myApp.style.minHeight = "110vh"
+                myApp.style.backgroundImage = `url(./clearSky.webp)`
+                myApp.style.minHeight = "100vh"
                 myApp.style.width = "auto"
                 icon.src=  "./sunny.png"
             }else{}
