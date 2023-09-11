@@ -1,8 +1,8 @@
 # Weather Application
 
-![Weather App Screenshot](screenshot.png)
-
 A simple Weather Application built with HTML, CSS, and Vanilla JavaScript. This app allows users to search for weather information for a specific location and displays details such as temperature, pressure, humidity, longitude, and latitude. Additionally, it uses the Navigator API to get the default location and coordinates.
+
+![Weather App Screenshot](https://res.cloudinary.com/dljgkzwfz/image/upload/v1694443247/Github%20ReadMe%20Screenshots/Screenshot_84_nbxpx7.png)
 
 ## Table of Contents
 
