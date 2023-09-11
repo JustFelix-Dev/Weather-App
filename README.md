@@ -12,7 +12,7 @@ A simple Weather Application built with HTML, CSS, and Vanilla JavaScript. This 
 
 ## Demo
 
-You can try the Weather Application live by visiting [this link](https://your-weather-app-link.com).
+You can try the Weather Application live by visiting [this link](https://justfelix-dev.github.io/Weather-App/).
 
 ## Features
 
@@ -37,9 +37,3 @@ You can try the Weather Application live by visiting [this link](https://your-we
 5. The weather details will be updated in real-time based on the location you specify.
 
 6. Enjoy staying informed about the weather!
-
-## Project Structure
-
-The project directory structure is organized as follows:
-
-
